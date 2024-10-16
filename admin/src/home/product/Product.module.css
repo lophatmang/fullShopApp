@@ -1,0 +1,92 @@
+.product {
+  margin: 40px 20px;
+  position: relative;
+  h3 {
+    color: black;
+  }
+  .add {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 5px;
+    border-radius: 8px;
+    color: green;
+    border: 1px solid green;
+  }
+
+  input {
+    outline: auto;
+    padding: 10px;
+    margin: 10px 0;
+  }
+  table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 14px;
+    td,
+    th {
+      border: 2px solid #00000018;
+    }
+    thead {
+      /* background-color: #32a4c1;
+      color: white; */
+      th {
+        padding: 5px 10px;
+      }
+    }
+    thead {
+      padding: 10px 0;
+    }
+
+    tbody {
+      tr {
+        /* td:first-child {
+          text-align: center;
+        } */
+        img {
+          width: 50%;
+        }
+        td {
+          padding: 20px 5px;
+          form {
+            display: flex;
+            gap: 10px;
+            text-align: center;
+            button {
+              padding: 5px;
+              color: white;
+              border: 1px solid red;
+              background-color: red;
+              border-radius: 8px;
+            }
+          }
+        }
+      }
+      tr:nth-of-type(odd) {
+        background-color: #f4f8fb;
+      }
+    }
+  }
+}
+
+.buttonPage {
+  position: absolute;
+  border-radius: 8px;
+  border: 1px solid #0000001f;
+  right: 1%;
+  button {
+    width: 40px;
+    padding: 5px;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  button:first-child {
+    border-right: 1px solid #0000001f;
+  }
+  button:last-child {
+    border-left: 1px solid #0000001f;
+  }
+}

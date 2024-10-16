@@ -1,0 +1,100 @@
+.home {
+  padding: 20px;
+  .quantity {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    div {
+      position: relative;
+      padding: 10px;
+      box-shadow: #00000059 0px 5px 15px;
+      border-radius: 8px;
+      span {
+        font-weight: bolder;
+        color: #00000075;
+      }
+      h3 {
+        margin: 30px 0;
+      }
+      svg {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        padding: 10px;
+        border-radius: 8px;
+      }
+    }
+  }
+
+  table {
+    margin: 40px 0;
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 14px;
+    td,
+    th {
+      border: 2px solid #00000018;
+    }
+    thead {
+      /* background-color: #32a4c1;
+      color: white; */
+      th {
+        padding: 5px 10px;
+      }
+    }
+    thead {
+      padding: 10px 0;
+    }
+
+    tbody {
+      tr {
+        /* td:first-child {
+          text-align: center;
+        } */
+        img {
+          width: 50%;
+        }
+        td {
+          padding: 20px 5px;
+        }
+      }
+      tr:nth-of-type(odd) {
+        background-color: #f4f8fb;
+      }
+      th {
+        padding: 5px;
+      }
+      button {
+        border: 1px solid green;
+        background-color: green;
+        padding: 5px;
+        min-width: 80px;
+        border-radius: 4px;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.buttonPage {
+  position: absolute;
+  border-radius: 8px;
+  border: 1px solid #0000001f;
+  right: 1%;
+  button {
+    width: 40px;
+    padding: 5px;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  button:first-child {
+    border-right: 1px solid #0000001f;
+  }
+  button:last-child {
+    border-left: 1px solid #0000001f;
+  }
+}

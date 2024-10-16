@@ -1,0 +1,45 @@
+.addProduct {
+  padding: 30px;
+  background-color: #f4f8fb;
+  display: flex;
+  flex-direction: column;
+  span {
+    width: 300px;
+    align-self: center;
+    color: red;
+    text-align: center;
+    background-color: rgba(255, 0, 0, 0.205);
+    border: 1px solid red;
+    padding: 10px 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    input,
+    textarea {
+      /* outline: auto; */
+      padding: 9px;
+      border: 1px solid #0000003a;
+      margin-bottom: 20px;
+      border-radius: 4px;
+    }
+    select {
+      margin-bottom: 20px;
+    }
+    input[type="file"] {
+      outline: none;
+      border: none;
+      padding-left: 0;
+    }
+    label {
+      margin-bottom: 10px;
+    }
+    button {
+      align-self: start;
+      padding: 10px;
+      background-color: #5f76e8;
+      color: white;
+      border-radius: 4px;
+    }
+  }
+}

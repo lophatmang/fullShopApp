@@ -1,0 +1,7 @@
+.notFound {
+  background-color: #0000004f;
+  padding: 70px 0;
+  img {
+    width: 100%;
+  }
+}

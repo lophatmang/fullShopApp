@@ -1,0 +1,70 @@
+.user {
+  margin: 40px 20px;
+  position: relative;
+  h3 {
+    color: black;
+  }
+  table {
+    margin: 20px 0;
+    width: 100%;
+    border-collapse: collapse;
+
+    font-size: 14px;
+    td,
+    th {
+      border: 2px solid #00000018;
+    }
+    thead {
+      /* background-color: #32a4c1;
+      color: white; */
+      th {
+        padding: 5px 10px;
+      }
+    }
+    thead {
+      padding: 10px 0;
+    }
+
+    tbody {
+      tr {
+        td {
+          padding: 20px 5px;
+
+          .consultant {
+            background-color: #f69685;
+            border-radius: 4px;
+            padding: 5px;
+          }
+          .customer {
+            background-color: #39d139;
+            border-radius: 4px;
+            padding: 5px;
+          }
+        }
+      }
+      tr:nth-of-type(odd) {
+        background-color: #f4f8fb;
+      }
+    }
+  }
+}
+
+.buttonPage {
+  position: absolute;
+  border-radius: 8px;
+  border: 1px solid #0000001f;
+  right: 1%;
+  button {
+    width: 40px;
+    padding: 5px;
+  }
+  button:disabled {
+    cursor: not-allowed;
+  }
+  button:first-child {
+    border-right: 1px solid #0000001f;
+  }
+  button:last-child {
+    border-left: 1px solid #0000001f;
+  }
+}

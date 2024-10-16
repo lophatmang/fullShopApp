@@ -1,0 +1,36 @@
+.navbar {
+  height: 100%;
+  h6 {
+    margin: 10px 20px;
+    margin-top: 20px;
+  }
+}
+.icon {
+  display: grid;
+  grid-template-columns: 1fr 9fr;
+  gap: 10px;
+  align-items: center;
+  margin: 10px 30px;
+  svg {
+    color: #7451f8;
+    height: 18px;
+  }
+}
+
+.clockOutTime {
+  position: fixed;
+  left: 1%;
+  bottom: 1%;
+  --fcc-digit-color: white; /* color of digit */
+  --fcc-divider-color: white; /* color of divider */
+  --fcc-flip-duration: 0.5s; /* transition duration when flip card */
+  --fcc-spacing: 8px; /* space between unit times and separators */
+  --fcc-digit-block-width: 40px; /* width of digit card */
+  --fcc-digit-block-height: 60px; /* height of digit card, highly recommend in even number */
+  --fcc-digit-block-radius: 5px; /* border radius of digit card */
+  --fcc-digit-block-spacing: 5px; /* space between blocks in each unit of time */
+  --fcc-digit-font-size: 30px; /* font size of digit */
+  --fcc-label-font-size: 14px; /* font size of label */
+  --fcc-divider-height: 1px; /* height of divider */
+  --fcc-separator-size: 6px; /* size of colon */
+}

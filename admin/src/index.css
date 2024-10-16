@@ -1,0 +1,13 @@
+#root {
+  height: 100%;
+}
+
+.error {
+  border-color: red;
+  background-color: rgba(255, 0, 0, 0.205);
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
