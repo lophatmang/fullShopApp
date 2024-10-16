@@ -14,7 +14,12 @@
 <p>Administrator: https://admin-shop-app.vercel.app/</p>
 <p>Account administrator: </p>
 <ul>
-<li>username: admin </li>
+<li>email: admin@gmail.com </li>
+<li>password: 12345678 </li>
+</ul>
+<p>Account consultant: </p>
+<ul>
+<li>email: manage@gmail.com </li>
 <li>password: 12345678 </li>
 </ul>
 <h1>Deployment instructions (local)</h1>
