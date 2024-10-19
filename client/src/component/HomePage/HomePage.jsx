@@ -5,6 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { format2 } from "../API";
 import { popupSlice } from "../Layout/Layout";
+import { OrbitProgress } from "react-loading-indicators";
 
 const listProduct = [
   { img: "product_1.png", tag: "iphone" },

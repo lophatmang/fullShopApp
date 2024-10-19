@@ -1,10 +1,8 @@
 import {
-  Navigate,
   NavLink,
   useLoaderData,
   useNavigate,
   useParams,
-  useRevalidator,
   Outlet,
 } from "react-router-dom";
 import classes from "./Support.module.css";
@@ -30,14 +28,19 @@ function Support() {
     socket.current = io(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}`);
 
     socket.current.on("deleteRoom", (dataGot) => {
+      setListChat(dataGot.userList);
       if (userChat == dataGot.userId) {
-        location.replace("/support");
+        swal(`Phiên chat đã đóng`, "Khách hàng đã thoát phiên chat", "warning");
+        navigate("/support");
       }
     });
     socket.current.on("newRoom", (dataGot) => {
-      if (userChat !== dataGot.userId) {
-        location.replace("/support");
-      }
+      swal(
+        `Bạn có tin nhắn mới`,
+        "Vui lòng kiểm tra mới của tin nhắn khách hàng",
+        "warning"
+      );
+      setListChat(dataGot.userList);
     });
 
     return () => {

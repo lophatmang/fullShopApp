@@ -25,7 +25,6 @@ function Chat() {
     ///////////////////////////////////
     socket.current = io(`${import.meta.env.VITE_REACT_APP_BACKEND_URL}`);
     socket.current.on("sendDataServer", (dataGot) => {
-      console.log(userChat == dataGot.data.userId);
       if (userChat == dataGot.data.userId) {
         setMessageList((messageList) => [...messageList, dataGot.data]);
       }

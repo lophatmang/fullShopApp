@@ -28,6 +28,7 @@ library.add(fas);
 const router = createBrowserRouter([
   {
     element: <Layout />,
+    loader: loaderChat,
     children: [
       {
         path: "/",
