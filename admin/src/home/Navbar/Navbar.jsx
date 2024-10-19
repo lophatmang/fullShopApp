@@ -65,10 +65,6 @@ function Navbar() {
             <FontAwesomeIcon icon="fa-solid fa-mobile-button" />
             <span>Product</span>
           </NavLink>
-          <NavLink to="/transaction" className={classes.icon}>
-            <FontAwesomeIcon icon="fa-solid fa-truck" />
-            <span>Transactions</span>
-          </NavLink>
           <h6>NEW</h6>
           <NavLink to="/newProduct" className={classes.icon}>
             <FontAwesomeIcon icon="fa-solid fa-cart-plus" />
