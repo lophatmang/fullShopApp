@@ -27,7 +27,8 @@ function Navbar() {
     return () => {
       clearInterval(interVal);
     };
-  });
+  }, []);
+
   return (
     <div
       className={classes.navbar}
