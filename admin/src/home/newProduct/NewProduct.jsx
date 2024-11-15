@@ -52,8 +52,10 @@ function NewProduct() {
         }
       }
       api();
+    } else {
+      setProduct();
     }
-  }, []);
+  }, [edit]);
 
   return (
     <div className={classes.addProduct}>
