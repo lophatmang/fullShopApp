@@ -145,7 +145,7 @@ export async function actionAddProduct({ request }) {
     for (let i = 0; i < files.length; i++) {
       formData.append(`file${i + 1}`, files[i]);
     }
-    const resImg = await fetch("http://httpbin.org/post", {
+    const resImg = await fetch("https://httpbin.org/post", {
       method: "POST",
       headers: {
         "Custom-Header": "value",
