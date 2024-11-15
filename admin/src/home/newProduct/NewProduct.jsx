@@ -159,7 +159,7 @@ function NewProduct() {
           }
         ></textarea>
         <label>Upload image (5 images)</label>
-        <input name="file" type="file" multiple disabled={product && true} />
+        <input name="file" type="file" multiple disabled={edit} />
         {product && (
           <input type="hidden" name="productId" value={product._id} />
         )}
